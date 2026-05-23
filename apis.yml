@@ -1,0 +1,130 @@
+aid: nubank
+name: Nu (Nubank)
+description: >-
+  Nu Holdings (Nubank) is Latin America's largest digital bank, with tens of
+  millions of customers across Brazil, Mexico, and Colombia. Its core
+  product surface - credit card, account, lending, investments, and
+  insurance - is consumer-facing through the Nu mobile app, and Nubank does
+  not publish a general-purpose public developer portal. Nubank participates
+  in Brazil's Open Finance (Open Banking Brasil) regime, which standardises
+  consent-driven access to account, transaction, and payment-initiation
+  APIs for authorised third parties; Nubank's Open Finance endpoints are
+  registered with the Brazilian Central Bank's directory. For merchant
+  acceptance, Nubank operates NuPay for Business, a REST API for checkout
+  payments, refunds, OAuth2/CIBA-based authorization, beneficiary
+  management, and webhook event notifications, hosted at api.spinpay.com.br.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+position: Producer
+created: '2026-05-23'
+modified: '2026-05-23'
+tags:
+  - Neobank
+  - Banking
+  - Credit Cards
+  - Open Finance
+  - Payments
+  - Brazil
+  - Mexico
+  - Colombia
+  - Latin America
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/nubank/refs/heads/main/apis.yml
+specificationVersion: '0.20'
+apis:
+  - aid: nubank:open-finance
+    name: Nubank Open Finance Brasil API
+    description: >-
+      Open Finance Brasil endpoints registered by Nubank in the Central Bank
+      directory. Provides consent-driven access to account, credit-card,
+      loan, and payment-initiation data for authorised TPPs under the
+      Brazilian Open Finance regulatory framework.
+    humanURL: https://openfinance.dev.br/provider/Nubank
+    baseURL: https://openbanking.nubank.com.br
+    tags:
+      - Open Finance
+      - Open Banking
+      - Consent
+      - Brazil
+    properties:
+      - type: Documentation
+        url: https://openfinance.dev.br/provider/Nubank
+  - aid: nubank:nupay-checkout
+    name: NuPay for Business - Checkout API
+    description: >-
+      REST API for creating and managing NuPay checkout orders, querying
+      payment status, cancelling unpaid orders, and processing refunds for
+      completed transactions. Built for Brazilian merchants accepting NuPay
+      as a payment method.
+    humanURL: https://docs.nupaybusiness.com.br/
+    baseURL: https://api.spinpay.com.br
+    tags:
+      - Checkout
+      - Payments
+      - Refunds
+    properties:
+      - type: Documentation
+        url: https://docs.nupaybusiness.com.br/checkout/docs/openapi/index.html
+  - aid: nubank:nupay-auth
+    name: NuPay for Business - Authentication API
+    description: >-
+      OAuth2 app-based authorization, CIBA (Client-Initiated Backchannel
+      Authentication) for web flows, OTP validation, and token issuance /
+      refresh for NuPay merchant integrations.
+    humanURL: https://docs.nupaybusiness.com.br/
+    baseURL: https://authentication.spinpay.com.br
+    tags:
+      - OAuth2
+      - CIBA
+      - Authentication
+    properties:
+      - type: Documentation
+        url: https://docs.nupaybusiness.com.br/
+  - aid: nubank:nupay-beneficiaries
+    name: NuPay for Business - Beneficiary Management API
+    description: >-
+      Register, query, and version final beneficiaries on NuPay orders with
+      document validation across CPF, CNPJ, and international identifier
+      types.
+    humanURL: https://docs.nupaybusiness.com.br/
+    baseURL: https://api.spinpay.com.br
+    tags:
+      - Beneficiaries
+      - Compliance
+    properties:
+      - type: Documentation
+        url: https://docs.nupaybusiness.com.br/
+  - aid: nubank:nupay-webhook
+    name: NuPay for Business - Event Webhooks
+    description: >-
+      Signed webhook callbacks delivering payment-status and refund-status
+      updates to merchant-configured endpoints. Includes signature validation
+      headers so merchants can verify NuPay as the sender.
+    humanURL: https://docs.nupaybusiness.com.br/
+    baseURL: customer-configured
+    tags:
+      - Webhooks
+      - Events
+      - Callbacks
+    properties:
+      - type: Documentation
+        url: https://docs.nupaybusiness.com.br/
+common:
+  - type: Website
+    url: https://nubank.com.br/
+  - type: Investor Relations
+    url: https://investors.nu/
+  - type: Engineering Blog
+    url: https://building.nubank.com/
+  - type: GitHub
+    url: https://github.com/nubank
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/nubank
+  - type: Open Finance Directory
+    url: https://openfinance.dev.br/provider/Nubank
+  - type: NuPay Documentation
+    url: https://docs.nupaybusiness.com.br/
+maintainers:
+  - FN: API Evangelist
+    url: https://apievangelist.com
