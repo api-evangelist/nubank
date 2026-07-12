@@ -111,6 +111,10 @@ apis:
       - type: Documentation
         url: https://docs.nupaybusiness.com.br/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/nubank-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/nubank-domain-security.yml
   - type: Website
     url: https://nubank.com.br/
   - type: Investor Relations
