@@ -43,7 +43,7 @@ tags:
   - Latin America
 url: >-
   https://raw.githubusercontent.com/api-evangelist/nubank/refs/heads/main/apis.yml
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 apis:
   - aid: nubank:open-finance
     name: Nubank Open Finance Brasil API
