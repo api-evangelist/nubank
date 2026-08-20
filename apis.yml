@@ -87,6 +87,9 @@ apis:
     humanURL: https://docs.nupaybusiness.com.br/
     baseURL: https://authentication.spinpay.com.br
     tags:
+      - Authentication
+      - CIBA
+    tags_raw:
       - OAuth2
       - CIBA
       - Authentication
@@ -116,6 +119,10 @@ apis:
     humanURL: https://docs.nupaybusiness.com.br/
     baseURL: customer-configured
     tags:
+      - Webhook
+      - Event
+      - Callbacks
+    tags_raw:
       - Webhooks
       - Events
       - Callbacks
